@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Khalid Sabban | Machine Learning Engineer</title>
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Gabriela&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo-light.jpeg"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <h1>Khalid Sabban</h1>
+                <h2>Machine Learning Engineer</h2>
+            </div>
+            <div class="links">
+                <a href="https://github.com/khalidsbn" target="_blank">
+                    <img src="img/github-icon.png" alt="github-link">
+                </a>
+                <a href="https://www.linkedin.com/in/khalidsabban/" target="_blank">
+                    <img src="img/linkedin-icon.png" alt="linkedin-link">
+                </a>
+            </div>
+
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html" style="border-bottom: 2px solid #404040;">Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+
+                <button>
+                    <a href="preview.html" target="_blank">Preview Resume</a>
+                </button>
+
+                <div class="timeline">
+                
+                    <!-- Work Experience-->
+                    <!--
+                    <h2>Work Experience</h2>
+                    <div class="event">
+                        <h3>Application Developer - Intern</h3>
+                        <h4>Schneider Electric</h4>
+                        <span>March 2020 - Present</span>
+                        <p>Development of an energy trading application in association with blockchain in the energy access
+                            sector.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Full Stack Developer - Intern</h3>
+                        <h4>SQLI</h4>
+                        <span>July 2019 - August 2019</span>
+                        <p>Web application for managing social projects built by free donations via the consultation of
+                            advertising videos.</p>
+                    </div>
+                    -->
+
+                    <!--Education-->
+                    <h2>Education</h2>
+                    <div class="event">
+                        <h3>Software Engineering</h3>
+                        <h4>Abdelmalek Essaadi University Faculty of Science</h4>
+                        <span>2019 - 2023</span>
+                        <p>Three years program with the goal to obtain an Bachelor’s degree in Mathematics and Informatics</p>
+                    </div>
+                    <div class="event">
+                        <h3>Baccalaureate</h3>
+                        <h4>High school Mohamed 6 - Martil</h4>
+                        <span>2015 - 2018</span>
+                        <p>Mathematical Sciences</p>
+                    </div>
+
+                    <!--Certification-->
+                    <h2>Certification</h2>
+                    <div class="event">
+                        <h3>Python</h3>
+                        <h4>Kaggle</h4>
+                        <span>09/2022 - 10/2022</span> <br>
+                        <button class="btn-dark-outline">
+                            <a href="https://drive.google.com/file/d/1HaZP6RvEU59UvlPqVXOOGVHWtNTTuzqM/view?usp=sharing" target="_blank">Certificate</a>
+                        </button>
+                    </div>
+                    <div class="event">
+                        <h3>Pandas</h3>
+                        <h4>Kaggle</h4>
+                        <span>03/2023 - 04/2023</span> <br>
+                        <button class="btn-dark-outline">
+                            <a href="https://drive.google.com/file/d/1-9o671iZVw7UA6OaGXMgQGDTMB4EJhgB/view?usp=sharing" target="_blank">Certificate</a>
+                        </button>
+                    </div>
+                    <div class="event">
+                        <h3>Intro to Machine Learning</h3>
+                        <h4>Kaggle</h4>
+                        <span>01/2023 - 03/2023</span> <br>
+                        <button class="btn-dark-outline">
+                            <a href="https://drive.google.com/drive/u/0/folders/1FAssIXTYSuIJIA6n0Vv_VPul5a8XjUYK" target="_blank">Certificate</a>
+                        </button>
+                    </div>
+
+                    <!--Award-->
+                    <h2>Award</h2>
+                    <div class="event">
+                        <h3>Collegiate Programming Contest</h3>
+                        <h4>ACPC</h4>
+                        <span>10/2021 - 11/2021</span> <br>
+                        <button class="btn-dark-outline">
+                            <a href="https://drive.google.com/file/d/1FKZGPQ9aMW3HlSyoh-9bpJtJ8lQF6vwy/view?usp=sharing" target="_blank">Achievement</a>
+                        </button>
+                    </div>
+                    <div class="event">
+                        <h3>Collegiate Programming Contest</h3>
+                        <h4>ICPC</h4>
+                        <span>05/2022 - 06/2022</span> <br>
+                        <button class="btn-dark-outline">
+                            <a href="https://drive.google.com/file/d/1ligRZhnJT8IDNWk6ulbDDfgijSHFzEa1/view?usp=sharing" target="_blank">Achievement</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                Made by <a href="https://www.linkedin.com/in/khalidsabban/" target="_blank">Khalid Sabban</a>.
+            </div>
+
+        </div>
+
+        <div class="img-holder">
+            <div class="card">
+                <img class="img" src="img/logo-light.jpeg" alt="my picture">
+            </div>
+        </div>
+
+        <script>
+            function copyToClipboard(element) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+            }
+
+            var card = document.querySelector('.card');
+            card.addEventListener('click', function () {
+                card.classList.toggle('is-flipped');
+            });
+        </script>
+    </body>
+</html>
